@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.koiware.salesking">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabView11"></activity>
+        <activity android:name=".TabView12"></activity>
+        <activity android:name=".TabView121"></activity>
+        <activity android:name=".TabView13"></activity>
+
+        <activity android:name=".TabView21"></activity>
+        <activity android:name=".TabView22"></activity>
+        <activity android:name=".TabView221"></activity>
+        <activity android:name=".TabView23"></activity>
+
+        <activity android:name=".TabView31"></activity>
+        <activity android:name=".TabView32"></activity>
+        <activity android:name=".TabView321"></activity>
+        <activity android:name=".TabView33"></activity>
+
+        <activity android:name=".TabView41"></activity>
+        <activity android:name=".TabView42"></activity>
+        <activity android:name=".TabView43"></activity>
+
+        <activity android:name=".MenuNoticeView01"></activity>
+        <activity android:name=".MenuReviewView02"></activity>
+        <activity android:name=".MenuShareView03"></activity>
+        <activity android:name=".MenuSettingView04"></activity>
+
+        <activity android:name=".MenuManageView05"></activity>
+        <!--<activity
+            android:name=".MenuManageView05"
+            android:theme="@android:style/Theme.NoTitleBar"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+-->
+        <activity android:name=".SearchListView"></activity>
+        <activity android:name=".SearchDetailView"></activity>
+        <activity android:name=".LoginDialogView"></activity>
+        <activity android:name=".LogoutDialogView"></activity>
+        <activity android:name=".LogoutStatusView"></activity>
+        <activity android:name=".LogoutStatusNoBarView"></activity>
+
+        <activity android:name=".NoDataPageView"></activity>
+
+    </application>
+
+</manifest>

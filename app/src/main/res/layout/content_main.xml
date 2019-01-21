@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TabHost
+        android:id="@+id/tabHost1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 첫 번째 페이지. content1 -->
+                <LinearLayout
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TabHost
+                        android:id="@+id/tabHost11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- 첫 번째 페이지. content11 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#8BC34A"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 11" />
+
+                                </LinearLayout>-->
+
+                                <!--<LinearLayout
+                                    android:id="@+id/content12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#009688"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 12" />
+
+                                </LinearLayout>-->
+
+                               <!-- <LinearLayout
+                                    android:id="@+id/content13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#009688"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 13" />
+
+                                </LinearLayout>-->
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+                </LinearLayout>
+
+                <!-- 두 번째 페이지. content2 -->
+                <LinearLayout
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TabHost
+                        android:id="@+id/tabHost21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- 첫 번째 페이지. content21 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#8BC34A"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 21" />
+
+                                </LinearLayout>-->
+
+                                <!-- 두 번째 페이지. content22 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#009688"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 22" />
+
+                                </LinearLayout>-->
+
+                                <!-- 세 번째 페이지. content23 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#009688"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 23" />
+
+                                </LinearLayout>-->
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+                </LinearLayout>
+
+                <!-- 세 번째 페이지. content3 -->
+                <LinearLayout
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TabHost
+                        android:id="@+id/tabHost31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!-- 첫 번째 페이지. content31 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content31"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#8BC34A"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 31" />
+
+                                </LinearLayout>-->
+
+                                <!-- 두 번째 페이지. content32 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#009688"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 32" />
+
+                                </LinearLayout>-->
+
+                                <!-- 세 번째 페이지. content33 -->
+                                <!--<LinearLayout
+                                    android:id="@+id/content33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#009688"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="TAB CONTENT 33" />
+
+                                </LinearLayout>-->
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+                </LinearLayout>
+
+                <!-- 네 번째 페이지. content4 -->
+                <!--<LinearLayout
+                    android:id="@+id/content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TabHost
+                        android:id="@+id/tabHost41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+
+                </LinearLayout>-->
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!--<TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 앱 관리 페이지" />-->
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <!--<TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+
+                    android:background="#1E88E5"
+                    android:text="앱 등록"
+
+                    />
+
+            </TableRow>-->
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-285dp"
+                            android:text="앱 이름"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+
+                </TableLayout>-
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:id="@+id/insertAppNm05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-240dp"
+                            android:text="개발사 / 개발자"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:id="@+id/insertRegNm05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-290dp"
+                            android:text="이메일"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:id="@+id/insertRegMail05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-250dp"
+                            android:text="다운로드 링크"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:id="@+id/insertAppLink05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-260dp"
+                            android:text="앱 기본 가격"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:id="@+id/insertAppPrice05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-305dp"
+                            android:text="선택"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+
+                    >
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <TextView
+                            android:id="@+id/btn_type_sale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="#1E88E5"
+                            android:gravity="center"
+
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+
+                            android:text="가격 할인"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/btn_type_pro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+
+                            android:text="프로모션 "
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+
+                            android:gravity="center"
+                            android:background="#FFFFFF"
+                            android:text=" 이벤트 "
+                            android:id="@+id/btn_type_event"
+                            android:textColor="#000000"
+                            />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-260dp"
+                            android:text="앱 할인 가격"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:id="@+id/insertAppSalePrice05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent">
+
+                        <TextView
+                            android:layout_marginRight="-260dp"
+                            android:text="이미지 등록"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:text="*"
+                            android:textColor="#E53935"
+                            />
+                    </TableRow>
+                </TableLayout>-
+            </TableRow>
+
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_horizontal"
+                    >-->
+
+                <!--<Button
+                    android:id="@+id/bt_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose" />
+
+                <Button
+                    android:id="@+id/bt_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload" />-->
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+
+                    >
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <TextView
+                            android:id="@+id/btn_choose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="#1976D2"
+                            android:gravity="center"
+
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+
+                            android:text="이미지 선택 "
+                            android:textColor="#FFFFFF"
+
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+
+                            android:gravity="center"
+                            android:background="#1976D2"
+                            android:text="이미지 업로드"
+                            android:id="@+id/btn_upload"
+                            android:textColor="#FFFFFF"
+                            />
+                    </TableRow>
+                </TableLayout>
+                <!--</LinearLayout>-->
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                >
+                <!--이미지 출력-->
+                <ImageView
+                    android:id="@+id/iv_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+
+    </FrameLayout>
+
+</ScrollView>
+    <!--
+    </android.support.constraint.ConstraintLayout>-->
