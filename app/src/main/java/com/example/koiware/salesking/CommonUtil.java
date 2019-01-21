@@ -11,6 +11,7 @@ public class CommonUtil {
     public static URL getServerUrl(String subPath) {
         URL url = null;
         try {
+            //외부 고정 ip
             //url = new URL("http://52.79.221.9:8080/" + subPath);
             //url = new URL("http://172.30.1.11:8080/android_board_server/" + subPath);
 
